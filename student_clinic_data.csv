@@ -1,0 +1,21 @@
+clinic type,mean waiting time min.,mean service time (1/mu) min,mean # of patients
+gastrology,65,9.2,8.5
+endocrinology,86,12,11
+pulmonary,68,11.2,8
+cardiology,66,7.8,9
+hematology,65,10.4,10
+urology,62,7.1,13
+nephrology,103,16.4,8.5
+dermatology,37,6.2,10
+ent,39,6.7,11
+pediatric,41,9.4,6.5
+dental,40,19,5
+orthopedic,60,5.7,19
+general surgery,61,7.5,12
+neuro surgery,59,8.1,12
+opthalmology,43,9.3,10
+obst/gyn,64,10.3,6.5
+vascular surgery,48,7.8,13
+internal med.,60,9.1,6
+nerology,71,11.7,9.5
+thorathic surgery,52,11.3,6

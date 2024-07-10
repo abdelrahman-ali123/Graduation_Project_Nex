@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./static/scss/style.css" />
+		<link
+			rel="shortcut icon"
+			href="./static/imgs/icons/fav_icon.svg"
+			type="image/x-icon" />
+
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+		<script
+			src="./static/scripts/js/plotlyjs/plotly-2.27.0.min.js"
+			charset="utf-8"></script>
+
+		<title>Nexira</title>
+	</head>
+
+	<body>
+		<ul class="header_menu">
+			<li>
+				<button class="menu-btn">
+					<span class="material-symbols-outlined"> menu </span>
+				</button>
+				<button class="chat-btn">
+					<span class="material-symbols-outlined"> chat </span>
+				</button>
+			</li>
+			<li>
+				<img src="./static/imgs/icons/main_icon.svg" width="80px" alt="" />
+			</li>
+			<li>
+				<button class="notif_btn">
+					<span class="material-symbols-outlined"> notifications </span>
+				</button>
+				<button class="user_btn">
+					<span>M</span>
+				</button>
+			</li>
+		</ul>
+
+		<ul class="main-menu">
+			<li sec_id="about_sec">
+				<span class="icon material-symbols-outlined"> nest_eco_leaf </span>
+				<span class="title">About</span>
+			</li>
+			<li sec_id="home_sec" class="active">
+				<span class="icon material-symbols-outlined"> home </span>
+				<span class="title">Home</span>
+			</li>
+			<li sec_id="tools_sec">
+				<span class="icon material-symbols-outlined">
+					local_fire_department
+				</span>
+				<span class="title">Tools</span>
+			</li>
+			<span class="indicator">
+				<i></i>
+			</span>
+		</ul>
+
+		<section id="about_sec">
+			<h1>About website</h1>
+		</section>
+
+		<section id="home_sec">
+			<h1>Hey <span>Mahmoud</span></h1>
+			<h2>Welcome to <img src="./static/imgs/icons/name.svg" alt="" /></h2>
+			<p>Your management support to hospital administration platform</p>
+			<button class="navigate_tools">
+				<span>Navigate tools</span>
+				<span class="material-symbols-outlined"> arrow_outward </span>
+			</button>
+		</section>
+
+		<section id="tools_sec">
+			<h1>Tools</h1>
+			<p>
+				Nexira support some tools that you can use such as applying control
+				charts on your data, providing the experience of simulating outpatient
+				department, and hospital assessment and comparison between many
+				hospitals.
+			</p>
+			<ul class="tools_list">
+				<li sec_id="control_charts_sec">
+					<span class="material-symbols-outlined"> ssid_chart </span>
+					<span>Control Charts</span>
+				</li>
+				<li sec_id="outpatient_dep_sec">
+					<span class="material-symbols-outlined"> outpatient_med </span>
+					<span>Outpatinet Department Simulation</span>
+				</li>
+				<li sec_id="hospital_assessment_sec">
+					<span class="material-symbols-outlined"> home_health </span>
+					<span>Hospitals Assessment and Comparison</span>
+				</li>
+			</ul>
+		</section>
+
+		<section id="control_charts_sec">
+			<div class="tls-sec upload_file_sec">
+				<div class="det-side">
+					<h1>Control Charts</h1>
+					<p>
+						Apply control charts on your data to check if it is in control or
+						not. In the assessment some of control charts such as <b>c</b>,
+						<b>p</b>, <b>S</b>, <b style="text-decoration: overline">X</b> and
+						<b>R control charts</b> are used.
+					</p>
+				</div>
+				<div class="upload_side">
+					<div class="upload_form">
+						<input type="file" id="control_chart_file" />
+						<span class="upload_icon material-symbols-outlined">
+							upload_file
+						</span>
+						<p>
+							<span>Drag and Drop csv File to upload </span><span>Or</span>
+							<span class="browse_files_btn">Browse</span>
+						</p>
+					</div>
+					<div class="uploaded_file_more">
+						<div class="uploaded_file">
+							<span class="material-symbols-outlined"> draft </span>
+							<span class="name-size" title="Lorem, ipsum dolor."
+								>Lorem, ipsum dolor. <i>20 kb</i></span
+							>
+							<span
+								title="Remove file"
+								class="material-symbols-outlined delete_file">
+								delete
+							</span>
+						</div>
+						<button class="show_more_files" title="Show more file">
+							<span class="material-symbols-outlined"> more_horiz </span>
+						</button>
+						<button class="submit_file inactive">
+							<span class="material-symbols-outlined"> arrow_outward </span>
+						</button>
+					</div>
+					<div class="files_holder">
+						<div class="files_holder_header">
+							<p>Choose one of the following files</p>
+							<span class="remove_files_holder material-symbols-outlined">
+								arrow_forward_ios
+							</span>
+						</div>
+						<div class="files">
+							<ul>
+								<li file_num="124326066">
+									<span class="material-symbols-outlined"> draft </span>
+									<span class="name-size" title="Al Jamhouria hospital"
+										>Al Jamhouria hospital<i>0.64 kb</i></span
+									>
+									<span class="material-symbols-outlined"> circle </span>
+								</li>
+								<li file_num="125546179">
+									<span class="material-symbols-outlined"> draft </span>
+									<span class="name-size" title="Al Rashid hospital"
+										>Al Rashid hospital<i>0.62 kb</i></span
+									>
+									<span class="material-symbols-outlined"> circle </span>
+								</li>
+								<li file_num="123143831">
+									<span class="material-symbols-outlined"> draft </span>
+									<span class="name-size" title="Customers waiting times"
+										>Customers waiting times<i>0.37 kb</i></span
+									>
+									<span class="material-symbols-outlined"> circle </span>
+								</li>
+								<li file_num="127224174">
+									<span class="material-symbols-outlined"> draft </span>
+									<span class="name-size" title="Emergency rooms"
+										>Emergency rooms<i>0.64 kb</i></span
+									>
+									<span class="material-symbols-outlined"> circle </span>
+								</li>
+								<li file_num="125672789">
+									<span class="material-symbols-outlined"> draft </span>
+									<span class="name-size" title="Film canisters"
+										>Film canisters<i>0.37 kb</i></span
+									>
+									<span class="material-symbols-outlined"> circle </span>
+								</li>
+								<li file_num="121641519">
+									<span class="material-symbols-outlined"> draft </span>
+									<span class="name-size" title="Hotel rooms"
+										>Hotel Rooms<i>0.34 kb</i></span
+									>
+									<span class="material-symbols-outlined"> circle </span>
+								</li>
+								<li file_num="125889047">
+									<span class="material-symbols-outlined"> draft </span>
+									<span class="name-size" title="Luggage delivery times"
+										>Luggage delivery times<i>0.70 kb</i></span
+									>
+									<span class="material-symbols-outlined"> circle </span>
+								</li>
+								<li file_num="124595494">
+									<span class="material-symbols-outlined"> draft </span>
+									<span class="name-size" title="Medical sponges"
+										>Medical sponges<i>0.42 kb</i></span
+									>
+									<span class="material-symbols-outlined"> circle </span>
+								</li>
+								<li file_num="128832343">
+									<span class="material-symbols-outlined"> draft </span>
+									<span
+										class="name-size"
+										title="Spring water bottling operation"
+										>Spring water bottling operation<i>0.81 kb</i></span
+									>
+									<span class="material-symbols-outlined"> circle </span>
+								</li>
+								<li file_num="124651825">
+									<span class="material-symbols-outlined"> draft </span>
+									<span class="name-size" title="Dry cleaning business"
+										>Dry cleaning business<i>0.16 kb</i></span
+									>
+									<span class="material-symbols-outlined"> circle </span>
+								</li>
+								<li file_num="129074531">
+									<span class="material-symbols-outlined"> draft </span>
+									<span class="name-size" title="Guest complaints"
+										>Guest complaints<i>0.32 kb</i></span
+									>
+									<span class="material-symbols-outlined"> circle </span>
+								</li>
+								<li file_num="128920190">
+									<span class="material-symbols-outlined"> draft </span>
+									<span class="name-size" title="Tellers errors"
+										>Tellers errors<i>0.13 kb</i></span
+									>
+									<span class="material-symbols-outlined"> circle </span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tls-sec workspace_sec">
+				<div class="wrk-sections active" id="control_charts_window">
+					<h1>Control Charts</h1>
+					<div class="charts_cont">
+						<div class="control_chart_graph active" id="graph_01"></div>
+						<div class="control_chart_graph exist" id="graph_02"></div>
+					</div>
+				</div>
+				<div class="wrk-sections" id="summary_window">
+					<h1>Analysis summary</h1>
+					<div class="cnt"></div>
+				</div>
+			</div>
+		</section>
+
+		<section id="outpatient_dep_sec" class="active">
+			<div class="tls-sec upload_file_sec active">
+				<div class="det-side">
+					<h1>Outpatient Department</h1>
+					<p>
+						Perform a <b>simulation for outpatient clinics</b> and analyze the
+						resulting data, including metrics such as patient waiting times and
+						other relevant parameters.
+						<b>Identify optimal solutions</b>
+						to reduce waiting times, such as <b>adding another clinic</b> or
+						<b>implementing a booking system</b>.
+					</p>
+				</div>
+				<div class="upload_side">
+					<div class="upload_form">
+						<input type="file" id="outpatinet_department_file" />
+						<span class="upload_icon material-symbols-outlined">
+							upload_file
+						</span>
+						<p>
+							<span
+								>Drag and Drop csv File to upload, and note that the file has
+								only 4 columns, clinic type, waiting time (min), service time
+								(min), and patients number.</span
+							><span>Or</span>
+							<span class="browse_files_btn">Browse</span>
+						</p>
+					</div>
+					<div class="uploaded_file_more">
+						<div class="uploaded_file">
+							<span class="material-symbols-outlined"> draft </span>
+							<span class="name-size" title="Lorem, ipsum dolor."
+								>Lorem, ipsum dolor. <i>20 kb</i></span
+							>
+							<span
+								title="Remove file"
+								class="material-symbols-outlined delete_file">
+								delete
+							</span>
+						</div>
+						<button class="show_more_files" title="Show more file">
+							<span class="material-symbols-outlined"> more_horiz </span>
+						</button>
+						<button class="submit_file inactive">
+							<span class="material-symbols-outlined"> arrow_outward </span>
+						</button>
+					</div>
+					<div class="files_holder">
+						<div class="files_holder_header">
+							<p>Choose one of the following files</p>
+							<span class="remove_files_holder material-symbols-outlined">
+								arrow_forward_ios
+							</span>
+						</div>
+						<div class="files">
+							<ul>
+								<li file_num="120082342">
+									<span class="material-symbols-outlined"> draft </span>
+									<span class="name-size" title="Students clinics data"
+										>Students clinics data<i>0.53 kb</i></span
+									>
+									<span class="material-symbols-outlined"> circle </span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tls-sec workspace_sec">
+				<div class="wrk-sections active" id="clinics_window">
+					<div class="clinics_header">
+						<h1>Clinic name</h1>
+						<div class="simulation_btns">
+							<button
+								title="Establish one more clinic"
+								id="simulate_two_clinics">
+								Add. clinic
+							</button>
+							<button title="Establish booking system" id="try_booking_btn">
+								Booking system
+							</button>
+							<div class="booking_period">
+								<label for="booking_period">Booking period min.</label>
+								<input type="number" id="booking_period" value="5" />
+							</div>
+							<select name="clinics_names" id="clinics_names"></select>
+						</div>
+					</div>
+					<div class="clinics_body">
+						<div class="clinic_summary">
+							<div class="cl_graph">
+								<div id="cl_graph"></div>
+								<div class="cl_graph_btns">
+									<button
+										data_type="mean_waiting_times"
+										data_title=" Waiting time (min.)"
+										class="active">
+										<span class="material-symbols-outlined"> hourglass </span
+										>Waiting time
+									</button>
+									<button
+										data_type="mean_service_time"
+										data_title=" Service time (min.)">
+										<span class="material-symbols-outlined"> concierge </span
+										>Service time
+									</button>
+									<button
+										data_type="mean_number_of_patients"
+										data_title=" Number of patients">
+										<span class="material-symbols-outlined">
+											personal_injury </span
+										>Patients number
+									</button>
+									<button
+										data_type="total_time_of_service_min"
+										data_title="Clinic service time (min.)">
+										<span class="material-symbols-outlined"> timer </span
+										>Clinics Service time
+									</button>
+									<button
+										data_type="total_time_of_clinic_hrs"
+										data_title="Clinic service time (hrs)">
+										<span class="material-symbols-outlined"> timelapse </span
+										>Clinics Duration
+									</button>
+								</div>
+							</div>
+							<div class="cl_sum">
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Doloribus aspernatur fugiat aperiam, distinctio reiciendis ea,
+									in doloremque minus cupiditate, earum ad sapiente ab molestiae
+									suscipit ullam sint soluta modi placeat.
+								</p>
+							</div>
+						</div>
+						<div class="simulation_graphs">
+							<h1>Simulation system</h1>
+							<div class="simulation_graph" id="simulation_graph"></div>
+							<p class="simulation_brief">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Tempore, nesciunt labore. Fugiat aliquid commodi temporibus
+								debitis architecto, quae quia quasi ut non, laborum possimus
+								atque omnis assumenda! Aliquam, placeat provident?
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="wrk-sections" id="outpatient_department_summary_window">
+					<h1>Outpatient department analysis summary</h1>
+					<div class="full_summary">
+						<div class="graph">
+							<div id="outpatient_clinics_graph"></div>
+							<div class="outpatient_graph_btns">
+								<button
+									data_type="mean_waiting_times"
+									data_title="Mean waiting time (min.)"
+									class="active">
+									<span class="material-symbols-outlined"> hourglass </span
+									>Waiting time
+								</button>
+								<button
+									data_type="mean_service_time"
+									data_title="Mean service time (min.)">
+									<span class="material-symbols-outlined"> concierge </span
+									>Service time
+								</button>
+								<button
+									data_type="mean_number_of_patients"
+									data_title="Mean number of patients">
+									<span class="material-symbols-outlined">
+										personal_injury </span
+									>Patients number
+								</button>
+								<button
+									data_type="total_time_of_service_min"
+									data_title="Clinic service time (min.)">
+									<span class="material-symbols-outlined"> timer </span>Clinics
+									Service time
+								</button>
+								<button
+									data_type="total_time_of_clinic_hrs"
+									data_title="Clinic service time (hrs)">
+									<span class="material-symbols-outlined"> timelapse </span
+									>Clinics Duration
+								</button>
+							</div>
+						</div>
+						<div class="main_summary">
+							<h2>Lorem ipsum dolor sit.</h2>
+							<ul>
+								<li>
+									<h3>Lorem ipsum dolor sit amet.</h3>
+									<p>
+										Lorem ipsum dolor sit amet <i>consectetur</i> adipisicing
+										elit. Cupiditate unde ut corrupti <b>veniam</b> excepturi!
+										Tempora.
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="hospital_assessment_sec">
+			<div class="tls-sec upload_file_sec active">
+				<div class="det-side">
+					<h1>Hospitals Assessment and Comparison</h1>
+					<p>
+						Two methods are applied. First, <b>Ordering method</b> is used to
+						order hospitals according to their mean and consistency (standard
+						deviation). Then, <b>Data Envelopment Analysis (DEA)</b> is used to
+						determine whether a hospital is inefficient or not.
+					</p>
+				</div>
+				<div class="upload_side">
+					<div class="upload_form">
+						<input type="file" id="hospital_comparison_file" />
+						<span class="upload_icon material-symbols-outlined">
+							upload_file
+						</span>
+						<p>
+							<span
+								>Drag and Drop xlsx File to upload, and note that the input data
+								must be in the first tab and the second contains the output
+								data.</span
+							><span>Or</span>
+							<span class="browse_files_btn">Browse</span>
+						</p>
+					</div>
+					<div class="uploaded_file_more">
+						<div class="uploaded_file">
+							<span class="material-symbols-outlined"> draft </span>
+							<span class="name-size" title="Lorem, ipsum dolor."
+								>Lorem, ipsum dolor. <i>20 kb</i></span
+							>
+							<span
+								title="Remove file"
+								class="material-symbols-outlined delete_file">
+								delete
+							</span>
+						</div>
+						<button class="show_more_files" title="Show more file">
+							<span class="material-symbols-outlined"> more_horiz </span>
+						</button>
+						<button class="submit_file inactive">
+							<span class="material-symbols-outlined"> arrow_outward </span>
+						</button>
+					</div>
+					<div class="files_holder">
+						<div class="files_holder_header">
+							<p>Choose one of the following files</p>
+							<span class="remove_files_holder material-symbols-outlined">
+								arrow_forward_ios
+							</span>
+						</div>
+						<div class="files">
+							<ul>
+								<li file_num="133591837">
+									<span class="material-symbols-outlined"> draft </span>
+									<span class="name-size" title="4 hospital types"
+										>4 hospital types<i>6.55 kb</i></span
+									>
+									<span class="material-symbols-outlined"> circle </span>
+								</li>
+								<li file_num="136013936">
+									<span class="material-symbols-outlined"> draft </span>
+									<span class="name-size" title="13 hospital types"
+										>13 hospital types<i>6.83 kb</i></span
+									>
+									<span class="material-symbols-outlined"> circle </span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tls-sec workspace_sec">
+				<div class="wrk-sections active" id="hospitals_window">
+					<div class="hospitals_header">
+						<h1>Hospitals</h1>
+						<ul>
+							<li>
+								<span>Hospitals number</span>
+								<span class="hos_nums"></span>
+							</li>
+							<li>
+								<span>Inefficient hospital/s</span>
+								<span class="inef_hos_nums"></span>
+							</li>
+						</ul>
+					</div>
+					<div class="hospitals_more_info">
+						<div class="hospitals_container">
+							<ul></ul>
+						</div>
+						<div class="hospital_detailes">
+							<h2></h2>
+							<div class="hos_data_cont"></div>
+						</div>
+					</div>
+				</div>
+				<div class="wrk-sections" id="hospital_comparison_summary_window">
+					<h1>Analysis Summary</h1>
+					<div class="cnt"></div>
+				</div>
+			</div>
+		</section>
+
+		<ul class="tools_menu">
+			<li sec_id="control_charts_sec">
+				<span class="material-symbols-outlined"> ssid_chart </span>
+
+				<i></i>
+			</li>
+			<li sec_id="outpatient_dep_sec">
+				<span class="material-symbols-outlined"> outpatient_med </span>
+
+				<i></i>
+			</li>
+			<li sec_id="hospital_assessment_sec" class="active">
+				<span class="material-symbols-outlined"> home_health </span>
+
+				<i></i>
+			</li>
+			<span class="r-ind"></span>
+			<span class="l-ind"></span>
+		</ul>
+
+		<div class="control_charts_menu">
+			<ul>
+				<li title="Upload file" class="upload_control_chart_file">
+					<span class="material-symbols-outlined"> upload_file </span>
+				</li>
+			</ul>
+			<ul class="chart_icons">
+				<li
+					title="Show charts"
+					class="active ccw"
+					sec_type="control_charts_window">
+					<i class="circle"></i>
+					<span class="material-symbols-outlined"> stacked_line_chart </span>
+				</li>
+				<li title="Show report" sec_type="summary_window">
+					<i class="circle"></i>
+					<span class="material-symbols-outlined"> description </span>
+				</li>
+				<i class="left"></i>
+				<i class="right"></i>
+			</ul>
+			<ul>
+				<li title="Fix charts" class="fix_chart_btn">
+					<span class="material-symbols-outlined"> build </span>
+				</li>
+			</ul>
+			<ul>
+				<li title="Back" class="close_control_chart_workspace">
+					<span class="material-symbols-outlined"> power_settings_new </span>
+				</li>
+			</ul>
+		</div>
+
+		<div class="hospital_comparison_menu">
+			<ul>
+				<li title="Upload file" class="upload_hospital_comparison_file">
+					<span class="material-symbols-outlined"> upload_file </span>
+				</li>
+			</ul>
+			<ul class="hospitals_comparison_icons">
+				<li title="Hospitals" class="active" sec_type="hospitals_window">
+					<i class="circle"></i>
+					<span class="material-symbols-outlined"> home_health </span>
+				</li>
+				<li title="Summary" sec_type="hospital_comparison_summary_window">
+					<i class="circle"></i>
+					<span class="material-symbols-outlined"> description </span>
+				</li>
+				<i class="left"></i>
+				<i class="right"></i>
+			</ul>
+			<ul>
+				<li title="Back" class="close_hospital_comparison_workspace">
+					<span class="material-symbols-outlined"> power_settings_new </span>
+				</li>
+			</ul>
+		</div>
+
+		<div class="outpatient_department_menu">
+			<ul>
+				<li title="Upload file" class="upload_outpatient_department_file">
+					<span class="material-symbols-outlined"> upload_file </span>
+				</li>
+			</ul>
+			<ul class="outpatient_department_icons">
+				<li title="Clinics" class="active" sec_type="clinics_window">
+					<i class="circle"></i>
+					<span class="material-symbols-outlined"> help_clinic </span>
+				</li>
+				<li title="Summary" sec_type="outpatient_department_summary_window">
+					<i class="circle"></i>
+					<span class="material-symbols-outlined"> description </span>
+				</li>
+				<i class="left"></i>
+				<i class="right"></i>
+			</ul>
+			<ul>
+				<li title="Back" class="close_outpatient_department_workspace">
+					<span class="material-symbols-outlined"> power_settings_new </span>
+				</li>
+			</ul>
+		</div>
+
+		<div class="user-menu">
+			<div class="menu-header">
+				<span class="user-icon">M</span>
+				<div class="user-det">
+					<span>Mahmoud Z. Seyam</span>
+					<span>Mahmoud.Seyam.190717896</span>
+				</div>
+			</div>
+			<ul class="options">
+				<li>
+					<span class="material-symbols-outlined"> person </span>
+					<span>Profile</span>
+				</li>
+				<li>
+					<span class="material-symbols-outlined">logout</span>
+					<span>Logout</span>
+				</li>
+			</ul>
+		</div>
+
+		<ul class="control_charts_graph_menu">
+			<li title="Graph 1" sec_type="graph_01" class="active">
+				<span class="material-symbols-outlined"> filter_vintage </span>
+				<i class="circle"></i>
+			</li>
+			<li title="Graph 2" sec_type="graph_02">
+				<span class="material-symbols-outlined"> filter_vintage </span>
+				<i class="circle"></i>
+			</li>
+			<i class="r-ind"></i>
+			<i class="l-ind"></i>
+		</ul>
+
+		<div class="control_charts_graph_select"></div>
+
+		<div class="loader"></div>
+
+		<script src="./static/scripts/js/user.js"></script>
+		<script src="./static/scripts/js/control_charts.js"></script>
+		<script src="./static/scripts/js/hospitals_comparison.js"></script>
+		<script src="./static/scripts/js/outpatient_department.js"></script>
+	</body>
+</html>
