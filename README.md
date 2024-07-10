@@ -21,16 +21,16 @@ This project aims to develop a comprehensive management support system tailored 
 
 ## Features
 > 1. Control Chart Utilization: Visualize quality metrics and performance indicators to monitor and improve hospital services.
-![This is an image](static\imgs\icons\control_chart.png)
+![This is an image](static/imgs/icons/control_chart.png)
 
-> 3. Performance Reporting for Outpatient Departments: Generate detailed reports on the performance of outpatient departments, including patient wait times, treatment outcomes, and resource utilization.
-![This is an image](static\imgs\icons\performance_report.png)
+> 2. Performance Reporting for Outpatient Departments: Generate detailed reports on the performance of outpatient departments, including patient wait times, treatment outcomes, and resource utilization.
+![This is an image](static/imgs/icons/performance_report.png)
 
-> 5. Hospital Benefit Simulation: Simulate the impact of different management decisions on hospital benefits and operational efficiency.
+> 3. Hospital Benefit Simulation: Simulate the impact of different management decisions on hospital benefits and operational efficiency.
 >> 1. Booking System Simulation
-![This is an image](static\imgs\icons\booking_system.png)
+![This is an image](static/imgs/icons/booking_system.png)
 >> 2. Additional Clini Simulation
-![This is an image](static\imgs\icons\add_clinic.png)
+![This is an image](static/imgs/icons/add_clinic.png)
 
 > 4. Comparative Analysis of Hospitals: Compare performance metrics, resource utilization, and patient outcomes across different hospitals to identify best practices and areas for improvement.
-![This is an image](static\imgs\icons\comparison.png)
+![This is an image](static/imgs/icons/comparison.png)
